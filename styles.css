@@ -1,0 +1,132 @@
+/* Reset padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arimo', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 16px;
+}
+
+.container {
+    width: 100%;
+    max-width: 414px;
+    display: grid;
+    gap: 16px;
+}
+
+/* Estilização do Cabeçalho */
+.header {
+    display: flex;
+    justify-content: space-between;
+    background: #0047ab;  /* Azul do Inatel */
+    padding: 16px;
+    border-radius: 8px;
+    position: relative;
+    z-index: 10;
+    color: white;
+}
+
+.menu-icon {
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+#theme-menu {
+    position: absolute;
+    top: 60px;
+    right: 16px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 8px;
+    z-index: 9;
+}
+
+#theme-menu button {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin: 4px 0;
+    background: #ffcc00; /* Amarelo do Inatel */
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+#theme-menu button:hover {
+    background: #e6b800;
+}
+
+/* Seção de Mensagens */
+.mensagens {
+    background: var(--mensagens-bg);
+    padding: 16px;
+    border-radius: 8px;
+}
+
+/* Seção das Aulas */
+.aulas {
+    background: var(--aulas-bg);
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.aula {
+    background: white;
+    margin: 8px 0;
+    padding: 16px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Seção de Notícias */
+.noticias {
+    background: var(--noticias-bg);
+    padding: 128px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.paginacao {
+    margin-top: 8px;
+}
+
+/* Temas */
+:root {
+    --mensagens-bg: #ff99cc;      /* Mensagens com um fundo suave */
+    --aulas-bg: #99ff99;          /* Aulas com fundo verde suave */
+    --noticias-bg: #cccccc;       /* Notícias com fundo cinza claro */
+}
+
+.theme1 {
+    --mensagens-bg: #ff99cc;
+    --aulas-bg: #99ff99;
+    --noticias-bg: #cccccc;
+}
+
+.theme2 {
+    --mensagens-bg: #ffcc99;
+    --aulas-bg: #99ccff;
+    --noticias-bg: #cc99ff;
+}
+
+footer {
+    background: #f1f1f1;
+    padding: 16px;
+    text-align: center;
+}
+
+.svg_logo_inatel {
+    width: 150px;
+}
